@@ -74,7 +74,7 @@ export default {
 .content {
   position: absolute;
   right: 1rem;
-  left: 1.8rem;
+  left: 4.5rem;
   display: flex;
   height: 8rem;
   justify-content: space-between;

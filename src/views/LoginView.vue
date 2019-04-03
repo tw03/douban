@@ -1,7 +1,7 @@
 <template>
   <div class="login-view">
     <h1>
-      <a href="javascript:history.go(-1);">取消</a>登录豆瓣
+      <a href="javascript:history.go(-1);">取消</a>登录佐佑
     </h1>
     <form method="get" @submit.prevent="onSubmit()">
       <p v-if="error" class="tip error">{{error}}</p>
@@ -55,8 +55,8 @@
     <div class="footer">
       <div class="more-login">使用其他方式登录 &amp; 找回密码</div>
       <div class="btns">
-        <router-link :to="{name: 'RegisterView'}">注册豆瓣帐号</router-link>
-        <a href="#">下载豆瓣App</a>
+        <router-link :to="{name: 'RegisterView'}">注册佐佑帐号</router-link>
+        <a href="#">下载佐佑App</a>
       </div>
     </div>
   </div>
@@ -78,6 +78,14 @@ export default {
   },
   computed: {
     // Getting Vuex State from store/modules/user
+    // email () {
+    //   get: function () {
+    //     return this.$store.state.curTab.email
+    //   },
+    //   set: function (newValue) {
+    //     this.$store.state.curTab.route = newemail
+    //   }
+    // },
     ...mapState({
       email: state => state.user.temp_email,
       token: state => state.user.temp_token

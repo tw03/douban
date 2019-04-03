@@ -8,12 +8,12 @@
           <a href="#" @click.prevent="logout()">退出登录</a>
         </template>
         <template v-else>
-          <router-link :to="{name: 'LoginView'}" replace>登录豆瓣</router-link>
+          <router-link :to="{name: 'LoginView'}" replace>登录佐佑</router-link>
         </template>
       </div>
       <div class="nav-item">
         <a href="https://movie.douban.com/">使用桌面版</a><!-- replace blank
-        --><a href="#">使用豆瓣App</a>
+        --><a href="#">使用佐佑App</a>
       </div>
     </div>
     <!-- Quick start nav -->
@@ -33,7 +33,7 @@
             <a href="#" @click.prevent="logout()">退出登录</a>
           </template>
           <template v-else>
-            <router-link :to="{name: 'LoginView'}" replace>登录豆瓣</router-link>
+            <router-link :to="{name: 'LoginView'}" replace>登录佐佑</router-link>
           </template>
         </li>
       </ul>

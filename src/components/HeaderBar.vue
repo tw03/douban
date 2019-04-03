@@ -1,8 +1,8 @@
 <template>
   <div class="header-bar">
     <h1 class="title">
-      <router-link :to="{ name: 'HomeView'}">
-        豆瓣
+      <router-link  :to="{ name: 'HomeView'}">
+        佐佑
       </router-link>
     </h1>
     <ul class="nav">
@@ -48,6 +48,9 @@ export default {
 <style lang="scss" scoped>
 .header-bar {
   .title {
+    /*font-size: 30px;*/
+    /*font-style: inherit;*/
+    /*color: #00b600;*/
     flex: 1;
     max-width: 4.6rem;
     max-height: 2.2rem;
