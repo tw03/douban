@@ -78,7 +78,7 @@ const actions = {
    */
   getMovie ({ commit }) {
     request
-      .get('https://api.douban.com/v2/movie/in_theaters?count=8')
+      .get('https://douban.uieee.com/v2/movie/in_theaters?count=8')
       .use(jsonp)
       .end((err, res) => {
         if (!err) {
@@ -90,7 +90,7 @@ const actions = {
         }
       })
     request
-      .get('https://api.douban.com/v2/movie/coming_soon?count=8')
+      .get('https://douban.uieee.com/v2/movie/coming_soon?count=8')
       .use(jsonp)
       .end((err, res) => {
         if (!err) {
@@ -102,7 +102,7 @@ const actions = {
         }
       })
     request
-      .get('https://api.douban.com/v2/movie/top250?count=8')
+      .get('https://douban.uieee.com/v2/movie/top250?count=8')
       .use(jsonp)
       .end((err, res) => {
         if (!err) {

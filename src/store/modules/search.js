@@ -33,7 +33,7 @@ const actions = {
    */
   query ({ commit }, payload) {
     request
-      .get('https://api.douban.com/v2/movie/search?q=' +
+      .get('https://douban.uieee.com/v2/movie/search?q=' +
         payload.queryStr + '&count=3')
       .use(jsonp)
       .end((err, res) => {

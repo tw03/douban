@@ -76,7 +76,7 @@ const actions = {
       switch (payload.classify) {
         case 'movie':
           request
-            .get('https://api.douban.com/v2/' + payload.classify +
+            .get('https://douban.uieee.com/v2/' + payload.classify +
               '/subject/' + payload.id)
             .use(jsonp)
             .end((err, res) => {
@@ -92,7 +92,7 @@ const actions = {
           break
         case 'book':
           request
-            .get('https://api.douban.com/v2/' + payload.classify +
+            .get('https://douban.uieee.com/v2/' + payload.classify +
               '/' + payload.id)
             .use(jsonp)
             .end((err, res) => {
