@@ -20,7 +20,7 @@
             </template>
             <template v-if="subject.author && subjectMeta">
               <p class="meta">{{subjectMeta}}</p>
-              <a href="#" class="buy">在豆瓣购买</a>
+              <a href="#" class="buy">在佐佑购买</a>
             </template>
           </div>
         </div>
@@ -28,7 +28,7 @@
           <a class="link">
             在哪儿买这本书？
             <span class="info">
-              豆瓣阅读电子书 66.00元起
+              佐佑阅读电子书 66.00元起
             </span>
           </a>
         </div>

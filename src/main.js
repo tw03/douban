@@ -6,14 +6,17 @@ import router from './router'
 import store from './store'
 import vueScrollBehavior from 'vue-scroll-behavior'
 import 'normalize.css'
+import Mui from 'vue-awesome-mui'
 
 Vue.use(vueScrollBehavior, { router: router })
+Vue.use(Mui)
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
   store,
+  Mui,
   template: '<App/>',
   components: { App }
 })
